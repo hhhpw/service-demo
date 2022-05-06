@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo3</title>
+
+
+</head>
+
+<script src="./test.js"></script>
+<body>
+    <h1>demo3</h1>
+    <h2>2312</h2>
+    <!-- <img src="https://p6-passport.byteacctimg.com/img/mosaic-legacy/3791/5070639578~300x300.image" /> -->
+    <!-- <img src="./a.png" /> -->
+
+    <div id="btn">output</div>
+</body>
+</html>
+
+
+<script>
+
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw-demo3.js', {
+        scope: "/demo3/"
+    });
+
+    // .then(reg => {
+    //     console.log("注册成功回调");
+    //     console.log(reg)
+    //     // navigator?.serviceWorker?.controller?.postMessage({
+    //     //     type: 'hellow service worker',
+    //     // });
+    // })
+
+}
+const btn = document.getElementById("btn");
+btn.addEventListener("click", () => {
+    // console.log('yes')
+    // test();
+    setBgColor('red');
+})
+
+</script>
+
+
+
+<!-- <script src="./test.js"></script> -->
+

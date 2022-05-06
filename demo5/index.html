@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo5</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+if ('serviceWorker' in navigator) {
+
+    // setTimeout(() => {
+        navigator.serviceWorker.register('./sw1.js', {
+        // scope: "/sw1"
+    })
+    .then(reg => {
+        console.log("sw1", reg)
+    })
+// }, 10000)
+//   
+
+    setTimeout(() => {
+        navigator.serviceWorker.register('./sw2.js', {
+        // scope: "/"
+    })
+    .then(reg => {
+        console.log("sw2", reg)
+    })
+    }, 10000)
+   
+}
+
+</script>
+

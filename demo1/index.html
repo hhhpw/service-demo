@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo1</title>
+<!-- 
+    <img src="https://p6-passport.byteacctimg.com/img/mosaic-legacy/3791/5070639578~300x300.image" /> -->
+
+</head>
+<body>
+    demo1
+</body>
+</html>
+
+
+<script>
+
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw-demo1.js', {
+        scope: "/demo1/"
+    });
+
+    // .then(reg => {
+    //     console.log("注册成功回调");
+    //     console.log(reg)
+    //     // navigator?.serviceWorker?.controller?.postMessage({
+    //     //     type: 'hellow service worker',
+    //     // });
+    // })
+
+}
+
+</script>
+
+
